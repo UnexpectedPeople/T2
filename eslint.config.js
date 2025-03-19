@@ -16,7 +16,13 @@ export default [
       },
     },
     rules: {
-      'prettier/prettier': 'error',
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "parser": "flow"
+          }
+        ]
     },
   },
   pluginJs.configs.recommended,
@@ -42,4 +48,4 @@ export default [
   {
     ignores: ['node_modules', 'dist'],
   },
-]
+];
